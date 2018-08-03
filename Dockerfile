@@ -1,5 +1,7 @@
 FROM elixir:1.6.6-alpine
 
+# VERSION 01
+
 apk --no-cache --update add \
 	 build-base \
 	 bash \
