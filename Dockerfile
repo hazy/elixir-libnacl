@@ -2,7 +2,7 @@ FROM elixir:1.6.6-alpine
 
 # VERSION 01
 
-apk --no-cache --update add \
+RUN apk --no-cache --update add \
 	 build-base \
 	 bash \
 	 git \
@@ -10,5 +10,5 @@ apk --no-cache --update add \
 	 nodejs-npm \
 	 libsodium-dev
 
-mix local.hex --force
-mix local.rebar --force
+RUN mix local.hex --force
+RUN mix local.rebar --force
