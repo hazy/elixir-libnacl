@@ -9,7 +9,12 @@ RUN apk --no-cache --update add \
     openssh-client \
     nodejs \
     nodejs-npm \
-    libsodium-dev
+    libsodium-dev \
+    tzdata
 
 RUN mix local.hex --force
 RUN mix local.rebar --force
+RUN cp /usr/share/zoneinfo/Etc/UTC /etc/localtime && echo "Etc/UTC" > /etc/timezone
+
+RUN apk del tzdata
+
