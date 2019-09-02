@@ -1,4 +1,4 @@
-FROM elixir:1.6.6-alpine
+FROM elixir:1.8.1-alpine
 
 # VERSION 01
 
