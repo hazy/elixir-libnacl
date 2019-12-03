@@ -14,7 +14,7 @@ Included:
 
 Pick an elixir version, e.g. `1.9-alpine` then run `build.sh`, e.g.
 
-    ./build.sh --version 1.9-alpine --push
+    ./build.sh --version 1.9-alpine
 
 If you want to push the new version to Docker hub, then append `--push`:
 
