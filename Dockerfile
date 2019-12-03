@@ -1,4 +1,6 @@
-FROM elixir:1.9-alpine
+ARG elixir_version
+
+FROM elixir:${elixir_version}
 
 # VERSION 01
 
@@ -17,4 +19,3 @@ RUN mix local.rebar --force
 RUN cp /usr/share/zoneinfo/Etc/UTC /etc/localtime && echo "Etc/UTC" > /etc/timezone
 
 RUN apk del tzdata
-
