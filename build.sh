@@ -20,7 +20,7 @@ while test $# -gt 0; do
     esac
 done
 
-tag="hazyai/elixir-libnacl:${elixir_version}"
+tag="hazyai/elixir-libnacl:${elixir_version}-alpine"
 
 docker build -f Dockerfile -t $tag --build-arg elixir_version="$elixir_version" .
 

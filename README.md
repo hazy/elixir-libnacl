@@ -12,10 +12,10 @@ Included:
 
 ## To Update
 
-Pick an elixir version, e.g. `1.9-alpine` then run `build.sh`, e.g.
+Pick an elixir version, e.g. `1.11` then run `build.sh`, e.g.
 
-    ./build.sh --version 1.9-alpine
+    ./build.sh --version 1.11 --push
 
 If you want to push the new version to Docker hub, then append `--push`:
 
-    ./build.sh --version 1.9-alpine --push
+    ./build.sh --version 1.11 --push
